@@ -4,17 +4,16 @@ public class Door {
     private int x, y;
     private int width = 75;
     private int height = 80;
-    private Seat leftSeat;
-    private Seat rightSeat;
-
+    private Seat leftSeat; // composite
+    private Seat rightSeat; // composite
+    private Window window; // composite
     public Door(int x, int y) {
         this.x = x;
         this.y = y;
-        this.width = width;
-        this.height = height;
 
         leftSeat = new Seat(x+ 40,y + 20);
         rightSeat = new Seat(x+ 40,y + 20);
+        window = new Window(x + 5,y + 30);
     }
 
     public void draw() {
@@ -35,5 +34,6 @@ public class Door {
 
         leftSeat.draw();
         rightSeat.draw();
+        window.drawWithCurtains();
     }
 }

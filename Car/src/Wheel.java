@@ -1,7 +1,9 @@
-import java.awt.Color;
+import java.awt.*;
 
 public class Wheel {
     private int x,y;
+    private int width = 100;
+    private int height = 100;
     public Wheel(int x, int y){
         this.x = x;
         this.y = y;
@@ -9,7 +11,7 @@ public class Wheel {
     public void draw() {
         // draw the wheel
         Drawing.pen().setColor(Color.white);
-        Drawing.pen().fillOval(x, y, 100, 100);
+        Drawing.pen().fillOval(x, y, width, height);
 
         // draw the tire
         Drawing.pen().setColor(Color.black);
@@ -19,5 +21,11 @@ public class Wheel {
         Drawing.pen().setColor(Color.gray);
         Drawing.pen().fillOval(x + 20, y + 20, 60, 60);
 
+    }
+    public int height() {
+        return height;
+    }
+    public int width() {
+        return width;
     }
 }

@@ -10,8 +10,6 @@ public class Exhaust {
     public Exhaust(int x, int y) {
         this.x = x;
         this.y = y;
-        this.width = width;
-        this.height = height;
     }
 
     public void draw() {

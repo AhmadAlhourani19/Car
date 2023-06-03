@@ -3,7 +3,6 @@ import java.awt.*;
 public class Headlight {
     private int x, y;
     private int width = 30, height = 30;
-    private Color color = new Color(255, 255, 200);
     public Headlight(int x, int y){
         this.x = x;
         this.y = y;

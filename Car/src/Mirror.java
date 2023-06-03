@@ -4,8 +4,7 @@ public class Mirror {
     private int x, y;
     private int width = 20;
     private int height = 20;
-    private Color color = new Color(120, 120, 120);
-
+    
     public Mirror(int x, int y) {
         this.x = x;
         this.y = y;
